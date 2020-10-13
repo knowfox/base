@@ -6,3 +6,7 @@
 	path = packages/knowfox/entangle
 	url = git@github.com:knowfox/entangle.git
 	branch = minimal-change
+[submodule "packages/knowfox/drupal7"]
+	path = packages/knowfox/drupal7
+	url = git@github.com:knowfox/drupal7.git
+	branch = minimal-change

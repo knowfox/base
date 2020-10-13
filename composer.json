@@ -9,12 +9,25 @@
     "license": "GPLv3",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/knowfox/knowfox"
+            "type": "path",
+            "url": "packages/knowfox/knowfox",
+            "options": {
+                "symlink": true
+            }
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/knowfox/entangle"
+            "type": "path",
+            "url": "packages/knowfox/entangle",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "packages/knowfox/drupal7",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -27,8 +40,7 @@
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.0",
         "livewire/livewire": "^2.0",
-        "knowfox/knowfox": "dev-minimal-change",
-        "knowfox/entangle": "dev-minimal-change"
+        "knowfox/knowfox": "dev-minimal-change"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
