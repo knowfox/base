@@ -2,6 +2,11 @@
 /public/hot
 /public/storage
 /storage/*.key
+/public/css/knowfox.css
+/public/fonts/
+/public/img/
+/public/js/knowfox.js
+/storage/debugbar/
 /vendor
 .env
 .env.backup
