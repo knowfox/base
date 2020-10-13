@@ -1,9 +1,10 @@
 @servers(['web' => 'olav.net'])
 
 @setup
-    $repo = 'ssh://gogs@code.schettler.net:8222/olav/knowfox.git';
+    $repo = 'git@github.com:knowfox/base.git';
     $root_dir = '/var/www/knowfox';
-    $releases_dir = "{$root_dir}/releases";
+    //$releases_dir = "{$root_dir}/releases";
+    $releases_dir = "{$root_dir}/l8";
     $now = strftime('%Y%m%d-%H%M%S');
     $release_dir = "{$releases_dir}/{$now}";
 
@@ -27,6 +28,7 @@
     cd {{ $root_dir }};
     git clone {{ $repo }} {{ $release_dir }};
     cd {{ $release_dir }};
+    git submodule update --init --recursive
 
     rm -rf storage
     rm -rf bootstrap/cache
@@ -54,5 +56,5 @@
     ln -s {{ $release_dir }} {{ $target }}-{{ $now }}
     mv -T {{ $target }}-{{ $now }} {{ $target }}
 
-    cd {{ $root_dir }}/{{ $target }}; php artisan queue:restart; sudo /usr/local/sbin/restart-php
+    //cd {{ $root_dir }}/{{ $target }}; php artisan queue:restart; sudo /usr/local/sbin/restart-php
 @endtask
