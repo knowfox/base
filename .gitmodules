@@ -2,3 +2,7 @@
 	path = packages/knowfox/knowfox
 	url = git@github.com:knowfox/knowfox.git
 	branch = minimal-change
+[submodule "packages/knowfox/entangle"]
+	path = packages/knowfox/entangle
+	url = git@github.com:knowfox/entangle.git
+	branch = minimal-change

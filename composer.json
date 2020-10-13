@@ -1,12 +1,22 @@
 {
-    "name": "laravel/laravel",
+    "name": "knowfox/base",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Knowfox. A personal knowledge management system.",
     "keywords": [
-        "framework",
-        "laravel"
+        "knowfox",
+        "personal knowledge management"
     ],
-    "license": "MIT",
+    "license": "GPLv3",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/knowfox/knowfox"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/knowfox/entangle"
+        }
+    ],
     "require": {
         "php": "^7.3",
         "fideloper/proxy": "^4.2",
