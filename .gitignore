@@ -7,10 +7,12 @@
 /public/img/
 /public/js/knowfox.js
 /storage/debugbar/
+/storage/uploads
 /vendor
 .env
 .env.backup
 .phpunit.result.cache
+.vscode
 Homestead.json
 Homestead.yaml
 npm-debug.log

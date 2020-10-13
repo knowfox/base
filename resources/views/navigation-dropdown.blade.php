@@ -40,6 +40,15 @@
                     </x-slot>
 
                     <x-slot name="content">
+                        <!-- Knowfox -->
+                        <div class="block px-4 py-2 text-xs text-gray-400">
+                            {{ __('Konwfox') }}
+                        </div>
+
+                        <x-jet-dropdown-link href="{{ route('home') }}">
+                            {{ __('Concepts') }}
+                        </x-jet-dropdown-link>
+
                         <!-- Account Management -->
                         <div class="block px-4 py-2 text-xs text-gray-400">
                             {{ __('Manage Account') }}
