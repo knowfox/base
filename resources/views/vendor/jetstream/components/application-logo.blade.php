@@ -1,0 +1,1 @@
+<img style="float:left;margin:24px 10px 0 0" src="/img/knowfox-icon44.png">
