@@ -1,0 +1,4 @@
+[submodule "packages/knowfox/knowfox"]
+	path = packages/knowfox/knowfox
+	url = git@github.com:knowfox/knowfox.git
+	branch = minimal-change
