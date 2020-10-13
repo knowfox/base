@@ -3,8 +3,8 @@
 @setup
     $repo = 'git@github.com:knowfox/base.git';
     $root_dir = '/var/www/knowfox';
-    //$releases_dir = "{$root_dir}/releases";
-    $releases_dir = "{$root_dir}/l8";
+    $releases_dir = "{$root_dir}/releases";
+    //$releases_dir = "{$root_dir}/l8";
     $now = strftime('%Y%m%d-%H%M%S');
     $release_dir = "{$releases_dir}/{$now}";
 
@@ -56,5 +56,5 @@
     ln -s {{ $release_dir }} {{ $target }}-{{ $now }}
     mv -T {{ $target }}-{{ $now }} {{ $target }}
 
-    //cd {{ $root_dir }}/{{ $target }}; php artisan queue:restart; sudo /usr/local/sbin/restart-php
+    cd {{ $root_dir }}/{{ $target }}; php artisan queue:restart; sudo /usr/local/sbin/restart-php
 @endtask
