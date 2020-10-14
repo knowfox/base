@@ -1594,12 +1594,19 @@
             "dist": {
                 "type": "path",
                 "url": "packages/knowfox/entangle",
-                "reference": "5460c0632839701fb1a36ef7fb9c2b90f680f5e5"
+                "reference": "d831b2d8ba8caeee87bab0b58f70c6f5527d3c4f"
             },
             "require": {
                 "illuminate/support": "^8.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Knowfox\\Entangle\\ServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Knowfox\\Entangle\\": "src/"
