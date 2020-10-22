@@ -10,3 +10,7 @@
 	path = packages/knowfox/drupal7
 	url = git@github.com:knowfox/drupal7.git
 	branch = minimal-change
+[submodule "packages/knowfox/pocket"]
+	path = packages/knowfox/pocket
+	url = git@github.com:knowfox/pocket.git
+	branch = minimal-change

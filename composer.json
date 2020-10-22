@@ -24,6 +24,13 @@
         },
         {
             "type": "path",
+            "url": "packages/knowfox/pocket",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "packages/knowfox/drupal7",
             "options": {
                 "symlink": true
@@ -35,12 +42,12 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "knowfox/knowfox": "dev-minimal-change",
         "laravel/framework": "^8.0",
         "laravel/jetstream": "^1.4",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.0",
-        "livewire/livewire": "^2.0",
-        "knowfox/knowfox": "dev-minimal-change"
+        "livewire/livewire": "^2.0"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
