@@ -1,7 +1,7 @@
 [submodule "packages/knowfox/knowfox"]
 	path = packages/knowfox/knowfox
 	url = git@github.com:knowfox/knowfox.git
-	branch = minimal-change
+	branch = morphicjs-canvas
 [submodule "packages/knowfox/entangle"]
 	path = packages/knowfox/entangle
 	url = git@github.com:knowfox/entangle.git
@@ -14,3 +14,6 @@
 	path = packages/knowfox/pocket
 	url = git@github.com:knowfox/pocket.git
 	branch = minimal-change
+[submodule "packages/jmoenig/morphic.js"]
+	path = packages/jmoenig/morphic.js
+	url = git@github.com:jmoenig/morphic.js.git

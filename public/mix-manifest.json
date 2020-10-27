@@ -2,5 +2,6 @@
     "/js/app.js": "/js/app.js",
     "/js/knowfox.js": "/js/knowfox.js",
     "/css/knowfox.css": "/css/knowfox.css",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/morphic.js": "/js/morphic.js"
 }
