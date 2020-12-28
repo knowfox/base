@@ -47,7 +47,8 @@
         "laravel/jetstream": "^1.4",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.0",
-        "livewire/livewire": "^2.0"
+        "livewire/livewire": "^2.0",
+        "symfony/event-dispatcher": "^5.2"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
