@@ -39,9 +39,10 @@
     ],
     "require": {
         "php": "^7.3",
+        "duellsy/pockpack": "^2.5",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/guzzle": "^7.2",
         "knowfox/knowfox": "dev-minimal-change",
         "laravel/framework": "^8.0",
         "laravel/jetstream": "^1.4",
