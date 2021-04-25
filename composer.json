@@ -1,14 +1,48 @@
 {
-    "name": "laravel/laravel",
+    "name": "knowfox/base",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
+    "description": "Knowfox. A personal knowledge management system.",
+    "keywords": [
+        "knowfox",
+        "personal knowledge management"
+    ],
+    "license": "GPLv3",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/knowfox/knowfox",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "packages/knowfox/entangle",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "packages/knowfox/pocket",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "packages/knowfox/drupal7",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "knowfox/knowfox": "dev-minimal-change",
         "laravel/framework": "^8.12",
         "laravel/jetstream": "^2.3",
         "laravel/sanctum": "^2.6",
