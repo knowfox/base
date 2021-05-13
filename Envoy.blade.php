@@ -46,6 +46,7 @@
     php artisan cache:clear
     php artisan migrate
 
+    rm package-lock.json
     npm install --no-optional
     npm run production
 
