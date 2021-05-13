@@ -2,7 +2,7 @@
 
 @setup
     $repo = 'git@github.com:knowfox/base.git';
-    $repo_branch = '2021-05';
+    $repo_branch = 'master';
     $root_dir = '/var/www/knowfox';
     $releases_dir = "{$root_dir}/releases";
     //$releases_dir = "{$root_dir}/l8";
