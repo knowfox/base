@@ -1,4 +1,4 @@
-@servers(['web' => 'olav.net'])
+@servers(['web' => 'schettler.net'])
 
 @setup
     $repo = 'git@github.com:knowfox/base.git';
