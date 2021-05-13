@@ -2,6 +2,7 @@
 
 @setup
     $repo = 'git@github.com:knowfox/base.git';
+    $repo_branch = '2021-05';
     $root_dir = '/var/www/knowfox';
     $releases_dir = "{$root_dir}/releases";
     //$releases_dir = "{$root_dir}/l8";
@@ -26,7 +27,7 @@
       if [[ -n $old ]]; then echo $old | xargs rm -r; fi
     fi
     cd {{ $root_dir }};
-    git clone {{ $repo }} {{ $release_dir }};
+    git clone -b {{ $repo_branch }} {{ $repo }} {{ $release_dir }};
     cd {{ $release_dir }};
     git submodule update --init --remote --recursive
 
