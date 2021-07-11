@@ -47,7 +47,10 @@
         "laravel/jetstream": "^2.3",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
-        "livewire/livewire": "^2.0"
+        "league/flysystem-cached-adapter": "~1.0",
+        "league/flysystem-sftp": "~1.0",
+        "livewire/livewire": "^2.0",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
