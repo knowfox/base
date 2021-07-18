@@ -48,7 +48,7 @@
 
     rm package-lock.json
     npm install --no-optional
-    npm run production
+    #npm run production
 
     #chmod 777 storage/logs/laravel.log
     #sudo setfacl -R -m u:www-data:rwX -m u:olav:rwX {{ $root_dir }}/shared/storage
