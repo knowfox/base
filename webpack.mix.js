@@ -11,20 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-// Prepare Knowfox resources
-const knowfox_assets = 'packages/knowfox/knowfox/resources/assets';
-mix.sourceMaps()
-    .js(knowfox_assets + '/js/app.js', 'public/js/knowfox.js')
-    .sass(knowfox_assets + '/sass/app.scss', 'public/css/knowfox.css')
-    .copyDirectory(knowfox_assets + '/img', 'public/img')
-    .vue();
-
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        require('postcss-import'),
-        require('tailwindcss'),
-    ]);
-
-if (mix.inProduction()) {
-    mix.version();
-}
+mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'public/css', [
+    require('postcss-import'),
+    require('tailwindcss'),
+    require('autoprefixer'),
+]);
