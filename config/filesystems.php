@@ -42,6 +42,28 @@ return [
             'visibility' => 'public',
         ],
 
+        'upload' => [
+            'driver' => 'sftp',
+            'host' => env('UPLOAD_HOST'),
+            'username' => env('UPLOAD_USER'),
+            'password' => env('UPLOAD_PASSWORD'),
+            'port' => env('UPLOAD_PORT'),
+            'root' => env('UPLOAD_PATH'),
+
+            'cache' => [
+                'store' => 'redis',
+                'expire' => 86400, // 1d
+                'prefix' => 'upload-cache',
+            ],
+        
+            // Settings for SSH key based authentication...
+            //'privateKey' => '/path/to/privateKey',
+            //'password' => 'encryption-password',
+        
+            // Optional SFTP Settings...
+            // 'timeout' => 30,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

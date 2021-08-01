@@ -1,4 +1,13 @@
 {
+    "/js/knowfox.js": "/js/knowfox.js",
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/knowfox.css": "/css/knowfox.css",
+    "/css/app.css": "/css/app.css",
+    "/img/background.jpg": "/img/background.jpg",
+    "/img/github-32px.png": "/img/github-32px.png",
+    "/img/knowfox-icon.ico": "/img/knowfox-icon.ico",
+    "/img/knowfox-icon.png": "/img/knowfox-icon.png",
+    "/img/knowfox-icon128x128.png": "/img/knowfox-icon128x128.png",
+    "/img/knowfox-icon44.png": "/img/knowfox-icon44.png",
+    "/img/logo-bmc.svg": "/img/logo-bmc.svg"
 }

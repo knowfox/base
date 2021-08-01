@@ -1,0 +1,17 @@
+[submodule "packages/knowfox/knowfox"]
+	path = packages/knowfox/knowfox
+	url = git@github.com:knowfox/knowfox.git
+	branch = minimal-change
+[submodule "packages/knowfox/entangle"]
+	path = packages/knowfox/entangle
+	url = git@github.com:knowfox/entangle.git
+	branch = minimal-change
+[submodule "packages/knowfox/drupal7"]
+	path = packages/knowfox/drupal7
+	url = git@github.com:knowfox/drupal7.git
+	branch = minimal-change
+[submodule "packages/knowfox/pocket"]
+	path = packages/knowfox/pocket
+	url = git@github.com:knowfox/pocket.git
+	branch = minimal-change
+
