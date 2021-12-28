@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "npm run development",
-        "development": "mix",
+        "development": "mix -- --no-devtool",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
@@ -11,32 +11,33 @@
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.2.1",
-        "@tailwindcss/typography": "^0.3.0",
         "alpinejs": "^2.7.3",
+        "autoprefixer": "^10.1.0",
         "axios": "^0.21",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14",
+        "postcss": "^8.2.1",
         "postcss-import": "^12.0.1",
-        "resolve-url-loader": "^3.1.2",
-        "sass": "^1.32.11",
-        "sass-loader": "^11.0.1",
-        "tailwindcss": "^2.0.1"
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.37.0",
+        "sass-loader": "^12.1.0",
+        "tailwindcss": "^2.0.2"
     },
     "dependencies": {
         "bootstrap-sass": "^3.4.1",
         "dropzone": "^5.9.2",
         "featherlight": "^1.7.14",
-        "jqtree": "^1.6.0",
+        "jqtree": "^1.6.1",
         "jquery": "^3.6.0",
         "jquery-resizable": "^1.0.6",
         "jquery-ui": "^1.12.1",
+        "node-sass": "^6.0.1",
         "selectize": "^0.12.6",
         "simplemde": "^1.11.2",
         "snackbar": "^1.1.0",
-        "v-calendar": "^2.3.0",
-        "vue": "^2.6.12",
-        "vue-loader": "^15.9.6",
-        "vue-template-compiler": "^2.6.12"
+        "v-calendar": "^2.3.2",
+        "vue": "^2.6.14",
+        "vue-loader": "^15.9.7",
+        "vue-template-compiler": "^2.6.14"
     }
 }

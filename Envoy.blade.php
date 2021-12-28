@@ -2,7 +2,8 @@
 
 @setup
     $repo = 'git@github.com:knowfox/base.git';
-    $repo_branch = 'master';
+    //$repo_branch = 'master';
+    $repo_branch = '2021-07';
     $root_dir = '/var/www/knowfox';
     $releases_dir = "{$root_dir}/releases";
     //$releases_dir = "{$root_dir}/l8";
@@ -48,7 +49,7 @@
 
     rm package-lock.json
     npm install --no-optional
-    #npm run production
+    npm run production
 
     #chmod 777 storage/logs/laravel.log
     #sudo setfacl -R -m u:www-data:rwX -m u:olav:rwX {{ $root_dir }}/shared/storage
