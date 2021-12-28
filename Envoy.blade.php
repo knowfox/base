@@ -48,7 +48,7 @@
     php artisan migrate
 
     rm package-lock.json
-    npm install --no-optional
+    npm install --no-optional --legacy-peer-deps
     npm run production
 
     #chmod 777 storage/logs/laravel.log
