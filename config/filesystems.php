@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('FILESYSTEM_DISK', 'local'),
+    'default' => env('FILESYSTEM_DRIVER', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -40,6 +40,28 @@ return [
             'root' => storage_path('app/public'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
+        ],
+
+        'upload' => [
+            'driver' => 'sftp',
+            'host' => env('UPLOAD_HOST'),
+            'username' => env('UPLOAD_USER'),
+            'password' => env('UPLOAD_PASSWORD'),
+            'port' => env('UPLOAD_PORT'),
+            'root' => env('UPLOAD_PATH'),
+
+            'cache' => [
+                'store' => 'redis',
+                'expire' => 86400, // 1d
+                'prefix' => 'upload-cache',
+            ],
+        
+            // Settings for SSH key based authentication...
+            //'privateKey' => '/path/to/privateKey',
+            //'password' => 'encryption-password',
+        
+            // Optional SFTP Settings...
+            // 'timeout' => 30,
         ],
 
         's3' => [
