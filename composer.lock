@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ade624cc3a2043dda907e0569e17c560",
+    "content-hash": "013c8f2fe27afeeecc987695623c3b6f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -339,52 +339,6 @@
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.2"
             },
             "time": "2022-10-27T11:44:00+00:00"
-        },
-        {
-            "name": "djchen/pocket-api-php",
-            "version": "0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/djchen/pocket-api-php.git",
-                "reference": "96c1920082c2265de6a5d73580c5a7bad433c1ec"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/djchen/pocket-api-php/zipball/96c1920082c2265de6a5d73580c5a7bad433c1ec",
-                "reference": "96c1920082c2265de6a5d73580c5a7bad433c1ec",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Pocket": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dan Chen",
-                    "email": "dan@djc.me"
-                }
-            ],
-            "description": "A PHP wrapper for interfacing with Pocket's API (getpocket.com)",
-            "homepage": "https://github.com/djchen/pocket-api-php",
-            "keywords": [
-                "api",
-                "pocket"
-            ],
-            "support": {
-                "issues": "https://github.com/djchen/pocket-api-php/issues",
-                "source": "https://github.com/djchen/pocket-api-php/tree/master"
-            },
-            "abandoned": true,
-            "time": "2016-11-13T18:58:17+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1870,7 +1824,7 @@
         },
         {
             "name": "knowfox/drupal7",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/knowfox/drupal7",
@@ -1909,7 +1863,7 @@
         },
         {
             "name": "knowfox/entangle",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/knowfox/entangle",
@@ -1948,11 +1902,11 @@
         },
         {
             "name": "knowfox/knowfox",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/knowfox/knowfox",
-                "reference": "6d69a22ab9a9a9b3d1fb3ddb726ea64a6ca457cb"
+                "reference": "ea4b7ad722a50d474018144e43b67e19335ec008"
             },
             "require": {
                 "barryvdh/laravel-debugbar": "^3.5",
@@ -1963,9 +1917,9 @@
                 "genealabs/laravel-caffeine": "^9.0",
                 "guzzlehttp/guzzle": "^7.0",
                 "kalnoy/nestedset": "^6.0",
-                "knowfox/drupal7": "dev-main",
-                "knowfox/entangle": "dev-main",
-                "knowfox/pocket": "dev-main",
+                "knowfox/drupal7": "dev-master",
+                "knowfox/entangle": "dev-master",
+                "knowfox/pocket": "dev-master",
                 "laravel/framework": "^9.0",
                 "laravel/ui": "^3.0",
                 "mpociot/versionable": "@dev",
@@ -2008,16 +1962,13 @@
         },
         {
             "name": "knowfox/pocket",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/knowfox/pocket",
-                "reference": "195b2712cf927554d64b64203574b4f258313ae8"
+                "reference": "936a8d8e0c9c4dd67e3f6f8d6456026f6b4b50ab"
             },
-            "require": {
-                "djchen/pocket-api-php": "^0.2"
-            },
-            "type": "laravel-package",
+            "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
