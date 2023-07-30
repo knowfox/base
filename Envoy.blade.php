@@ -50,6 +50,8 @@
     ##rm package-lock.json
     ##npm install --no-optional --legacy-peer-deps
     ##npm run production
+    yarn install
+    yarn run production
 
     #chmod 777 storage/logs/laravel.log
     #sudo setfacl -R -m u:www-data:rwX -m u:olav:rwX {{ $root_dir }}/shared/storage
@@ -59,5 +61,6 @@
     ln -s {{ $release_dir }} {{ $target }}-{{ $now }}
     mv -T {{ $target }}-{{ $now }} {{ $target }}
 
-    cd {{ $root_dir }}/{{ $target }}; php artisan queue:restart; sudo /usr/local/sbin/restart-php
+    cd {{ $root_dir }}/{{ $target }}; php artisan queue:restart
+    ##; sudo /usr/local/sbin/restart-php
 @endtask
