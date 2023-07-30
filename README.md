@@ -1,59 +1,64 @@
-# Knowfox
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-Knowfox is my Personal Knowledge Management system. Having been an keen Evernote user since 2012, I finally got around to taking my precious notes to my own server.
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-[![Gitter](https://badges.gitter.im/knowfox-personal-knowledge-management/community.svg)](https://gitter.im/knowfox-personal-knowledge-management/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+## About Laravel
 
-## Features
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-* Hierarchies. Inspired by Dave Winer's Worldoutline and Fargo, I want my knowledge base to have a deep structure, not be only two stories tall.
-* Tags. Where a single hierarchy is not enough, tags can link common topics in the least intrusive way. Since the times of Web 2.0, tags are everywhere.
-* Typed relationships. Sometimes though, hierarchies are too strict and tags are too loose. For example, I want to link authors to books, founders to companies, cause to effect. For this, typed, bi-directional relationships are king.
-* Markdown. There are other many similar and nice text formats, but Markdown is simple and popular and has won the race.
-* Bookmarking. I frequently take note of websites and like to mark them for later reading.
-* Pictures. My notes have lots of pictures. Mostly screenshots, but some photos or diagrams added as well.
-* Privacy. All my notes and pictures are mine and should be visible to no one.
-* Simple journalling. I used Evernote on a daily basis and will do so with Knowfox, too. Easy, date-based journalling is a feature I use every day.
-* Sharing. Sometimes I want to share a note and its pictures. This should be painless and explicit.
-* Publishing. Knowledge wants to be communicated sometimes. For this, I want to export a sub-tree of my hierarchy as beautiful slide deck, effortlessly.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-This gives me the basic structure. On top of this,
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-* all my Evernote notes should go in there,
-* my catalogue of eBooks as well,
-* my timelines, too.
+## Learning Laravel
 
-The resulting system should be easy to understand, maintain and deploy. CouchDB would have been an nice option with Hoodie on to of it. Ultimately though, I felt more confident with *Laravel 5 and MySQL* so this is what Knowfox is built on.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-## Status
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Knowfox is usable and very nicely so.
+## Laravel Sponsors
 
-* Full text search works, maybe even better than the one in Evernote.
-* The integrated Markdown editor has no inline preview of images, but otherwise is a joy to use.
-* Picture handling is very slick, thanks to the integrated Dropzone.js and automatic inclusion of image links into the note's Markdown.
-* A bookmarklet helps me to bookmark websites and gather their content for later reference.
-* I have imported my most important Evernote notebooks and now rely on it for my everyday work and projects.
-* There is a hosted version at https://knowfox.com which is free to use. However, I make no guarantees as to the stability of this service. Ultimately, Knowfox is meant for self hosting.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-There is a [brief presentation](https://knowfox.com/presentation/47d6c8de/013c/11e7/8a8c/56847afe9799/index.html) about the system, too.
+### Premium Partners
 
-In addition to what Laravel requires, Knowfox uses the following NPM modules:
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-* selectize
-* simplemde
-* dropzone
-* jquery-ui
-* jquery-resizable
-* featherlight
-* jqtree
-* snackbar
-* v-calendar
-* jquery
-* bootstrap-sass
-* vue
-* vue-template-compiler
+## Contributing
 
-## The Future
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-I have built Knowfox in a frency to have a usable system as soon as possible. For others to be able to contribute, it most urgently needs automated tests. Some more importers for my other databases for eBooks and timelines will follow. Maybe native apps or a FUSE filesystem at some point.
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

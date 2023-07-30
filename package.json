@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "npm run development",
-        "development": "mix -- --no-devtool",
+        "development": "mix",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
@@ -24,7 +24,7 @@
         "tailwindcss": "^2.0.2"
     },
     "dependencies": {
-        "bootstrap-sass": "^3.4.1",
+        "bootstrap-sass": "3.4.1",
         "dropzone": "^5.9.2",
         "featherlight": "^1.7.14",
         "jqtree": "^1.6.1",
