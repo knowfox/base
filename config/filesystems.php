@@ -47,7 +47,7 @@ return [
             'host' => env('UPLOAD_HOST'),
             'username' => env('UPLOAD_USER'),
             'password' => env('UPLOAD_PASSWORD'),
-            'port' => env('UPLOAD_PORT'),
+            'port' => intval(env('UPLOAD_PORT')),
             'root' => env('UPLOAD_PATH'),
 
             'cache' => [
