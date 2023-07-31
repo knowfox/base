@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('knowfox::welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [Knowfox\Http\Controllers\HomeController::class, 'index'])->name('home');
