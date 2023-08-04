@@ -2123,10 +2123,11 @@
             "dist": {
                 "type": "path",
                 "url": "packages/knowfox/pocket",
-                "reference": "6648bf9d98e3c5b3f73256d8b5691bb6d589d8fa"
+                "reference": "ef4269fb97f27c9223c98dcbbb3956180e3152b1"
             },
             "require": {
-                "duellsy/pockpack": "dev-master"
+                "duellsy/pockpack": "dev-master",
+                "symfony/event-dispatcher": "6.3"
             },
             "type": "library",
             "extra": {
