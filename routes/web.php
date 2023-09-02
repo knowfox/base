@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', function () {
+    if (Auth::user()) {
+	return redirect()->route('home');
+    }
     return view('knowfox::welcome');
 });
 
